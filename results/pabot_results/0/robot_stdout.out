@@ -1,0 +1,16 @@
+==============================================================================
+ChamadasSutiesTestesPoUi                                                      
+==============================================================================
+Validação Componentes Accordion                                       | PASS |
+------------------------------------------------------------------------------
+Validação Componentes do Button                                       | PASS |
+------------------------------------------------------------------------------
+Validação Componentes Combo                                           | PASS |
+------------------------------------------------------------------------------
+Geracao de erro no robotframework                                     | FAIL |
+Element with locator '(span[contains(.,'Option 2')])[3]' not found.
+------------------------------------------------------------------------------
+ChamadasSutiesTestesPoUi                                              | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Output:  g:\Meu Drive\K3\Automation\POUI_Unico\results\pabot_results\0\output.xml
