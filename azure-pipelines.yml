@@ -25,6 +25,5 @@ steps:
     pip install robotframework robotframework-seleniumlibrary && npm install chromedriver
   displayName: 'Install dependencies'
 
-- powershell: |
-    robot --pythonpath . TestCases.robot
+- powershell: robot --pythonpath . TestCases.robot
   displayName: 'Run Robot Scripts'
