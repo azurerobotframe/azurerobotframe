@@ -14,6 +14,7 @@ Validação Componentes Accordion
     Dado que esteja na tela de componente do POUI combo
     Quando realizar o preenchimento do item accordion
     Então os dados serão armazenados
+    teste
 
 Validação Componentes do Button  
     Dado que esteja na tela de componente do POUI combo
