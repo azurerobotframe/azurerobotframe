@@ -14,7 +14,7 @@ Validação Componentes Accordion
     Dado que esteja na tela de componente do POUI combo
     Quando realizar o preenchimento do item accordion
     Então os dados serão armazenados
-    teste
+    
 
 Validação Componentes do Button  
     Dado que esteja na tela de componente do POUI combo
@@ -26,7 +26,7 @@ Validação Componentes Combo
     Quando selecionar o subitem Combo
     Então os dados estarão disponiveis para preenchimento
 
-Geracao de erro no robotframework
-    Dado que esteja na tela de componente do POUI combo
-    Quando selecionar o subitem
-    Então os dados estarão disponiveis
+# Geracao de erro no robotframework
+#     Dado que esteja na tela de componente do POUI combo
+#     Quando selecionar o subitem
+#     Então os dados estarão disponiveis

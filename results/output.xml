@@ -1,602 +1,544 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210910 16:19:58.558" rpa="false" schemaversion="2">
-<suite id="s1" name="ChamadasSutiesTestesPoUi" source="G:\Meu Drive\K3\Automation\POCRobotFramework\tests\ChamadasSutiesTestesPoUi.robot">
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210915 11:30:18.461" rpa="false" schemaversion="2">
+<suite id="s1" name="ChamadasSutiesTestesPoUi" source="g:\Meu Drive\K3\Automation\POCRobotFramework\tests\ChamadasSutiesTestesPoUi.robot">
 <kw name="Open Session" library="kwsOpenSession" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210910 16:19:59.686" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210910 16:19:59.685" endtime="20210910 16:20:02.281"/>
+<msg timestamp="20210915 11:30:19.484" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210915 11:30:19.483" endtime="20210915 11:30:22.248"/>
 </kw>
-<status status="PASS" starttime="20210910 16:19:59.684" endtime="20210910 16:20:02.282"/>
+<status status="PASS" starttime="20210915 11:30:19.483" endtime="20210915 11:30:22.248"/>
 </kw>
 <test id="s1-t1" name="Validação Componentes Accordion">
 <kw name="Dado que esteja na tela de componente do POUI combo" library="KwsValidacaoComponentesCombo">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210910 16:20:02.286" level="INFO">Opening url 'https://po-ui.io/documentation'</msg>
-<status status="PASS" starttime="20210910 16:20:02.285" endtime="20210910 16:20:05.094"/>
+<msg timestamp="20210915 11:30:22.254" level="INFO">Opening url 'https://po-ui.io/documentation'</msg>
+<status status="PASS" starttime="20210915 11:30:22.253" endtime="20210915 11:30:23.946"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210910 16:20:05.094" endtime="20210910 16:20:08.217"/>
+<status status="PASS" starttime="20210915 11:30:23.946" endtime="20210915 11:30:25.398"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:02.284" endtime="20210910 16:20:08.218"/>
+<status status="PASS" starttime="20210915 11:30:22.250" endtime="20210915 11:30:25.398"/>
 </kw>
 <kw name="Quando realizar o preenchimento do item accordion" library="KwsValidacaoComponentesAccordion">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//body/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-list[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-list-view[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/po-button[2]/button[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:08.221" level="INFO">Clicking element '//body/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-list[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-list-view[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/po-button[2]/button[1]/span[1]'.</msg>
-<status status="PASS" starttime="20210910 16:20:08.220" endtime="20210910 16:20:08.657"/>
+<msg timestamp="20210915 11:30:25.404" level="INFO">Clicking element '//body/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-list[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-list-view[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/po-button[2]/button[1]/span[1]'.</msg>
+<status status="PASS" starttime="20210915 11:30:25.403" endtime="20210915 11:30:25.727"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[contains(text(),'PO Accordion 1')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:08.657" endtime="20210910 16:20:09.158"/>
+<status status="PASS" starttime="20210915 11:30:25.727" endtime="20210915 11:30:26.093"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(text(),'PO Accordion 1')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:09.159" level="INFO">Clicking element '//div[contains(text(),'PO Accordion 1')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:09.158" endtime="20210910 16:20:09.264"/>
+<msg timestamp="20210915 11:30:26.094" level="INFO">Clicking element '//div[contains(text(),'PO Accordion 1')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:26.093" endtime="20210915 11:30:26.175"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//body/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/po-dynamic-form[1]/form[1]/po-dynamic-form-fields[1]/div[1]/po-input[1]/po-field-container[1]/div[1]/div[2]/input[1]</arg>
 <arg>${descTesteesc}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:09.265" level="INFO">Typing text 'Teste de input dos dados' into text field '//body/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/po-dynamic-form[1]/form[1]/po-dynamic-form-fields[1]/div[1]/po-input[1]/po-field-container[1]/div[1]/div[2]/input[1]'.</msg>
-<status status="PASS" starttime="20210910 16:20:09.265" endtime="20210910 16:20:09.715"/>
+<msg timestamp="20210915 11:30:26.176" level="INFO">Typing text 'Teste de input dos dados' into text field '//body/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/po-dynamic-form[1]/form[1]/po-dynamic-form-fields[1]/div[1]/po-input[1]/po-field-container[1]/div[1]/div[2]/input[1]'.</msg>
+<status status="PASS" starttime="20210915 11:30:26.175" endtime="20210915 11:30:26.576"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:08.220" endtime="20210910 16:20:09.715"/>
+<status status="PASS" starttime="20210915 11:30:25.402" endtime="20210915 11:30:26.576"/>
 </kw>
 <kw name="Então os dados serão armazenados" library="KwsValidacaoComponentesAccordion">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//body/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/div[1]/po-button[1]/button[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:09.717" level="INFO">Clicking element '//body/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/div[1]/po-button[1]/button[1]/span[1]'.</msg>
-<status status="PASS" starttime="20210910 16:20:09.717" endtime="20210910 16:20:09.793"/>
+<msg timestamp="20210915 11:30:26.577" level="INFO">Clicking element '//body/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/div[1]/po-button[1]/button[1]/span[1]'.</msg>
+<status status="PASS" starttime="20210915 11:30:26.577" endtime="20210915 11:30:26.635"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>//html[1]/body[1]/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/po-accordion[1]/div[1]/section[1]/po-accordion-item-header[1]/header[1]/button[1]/div[1]</arg>
 <arg>${descTesteesc}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20210910 16:20:09.828" level="INFO">Element '//html[1]/body[1]/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/po-accordion[1]/div[1]/section[1]/po-accordion-item-header[1]/header[1]/button[1]/div[1]' contains text 'Teste de input dos dados'.</msg>
-<status status="PASS" starttime="20210910 16:20:09.794" endtime="20210910 16:20:09.829"/>
+<msg timestamp="20210915 11:30:26.663" level="INFO">Element '//html[1]/body[1]/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/po-accordion[1]/div[1]/section[1]/po-accordion-item-header[1]/header[1]/button[1]/div[1]' contains text 'Teste de input dos dados'.</msg>
+<status status="PASS" starttime="20210915 11:30:26.636" endtime="20210915 11:30:26.663"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>Evidencia.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210910 16:20:09.968" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencia.png"&gt;&lt;img src="Evidencia.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210910 16:20:09.829" endtime="20210910 16:20:09.968"/>
+<msg timestamp="20210915 11:30:26.810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencia.png"&gt;&lt;img src="Evidencia.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210915 11:30:26.663" endtime="20210915 11:30:26.810"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//html[1]/body[1]/app-root[1]/div[1]/ng-component[1]/div[1]/ng-component[1]/po-page-default[1]/po-page[1]/div[1]/po-page-content[1]/div[1]/po-tabs[1]/div[2]/po-tab[2]/sample-po-accordion-labs-view[1]/div[2]/sample-po-accordion-labs[1]/po-accordion[1]/div[1]/section[1]/po-accordion-item-header[1]/header[1]/button[1]/div[1]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:09.969" endtime="20210910 16:20:09.996"/>
+<status status="PASS" starttime="20210915 11:30:26.810" endtime="20210915 11:30:26.842"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:09.716" endtime="20210910 16:20:09.997"/>
+<status status="PASS" starttime="20210915 11:30:26.577" endtime="20210915 11:30:26.843"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:02.283" endtime="20210910 16:20:09.998"/>
+<status status="PASS" starttime="20210915 11:30:22.248" endtime="20210915 11:30:26.844"/>
 </test>
 <test id="s1-t2" name="Validação Componentes do Button">
 <kw name="Dado que esteja na tela de componente do POUI combo" library="KwsValidacaoComponentesCombo">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210910 16:20:10.001" level="INFO">Opening url 'https://po-ui.io/documentation'</msg>
-<status status="PASS" starttime="20210910 16:20:10.001" endtime="20210910 16:20:10.833"/>
+<msg timestamp="20210915 11:30:26.849" level="INFO">Opening url 'https://po-ui.io/documentation'</msg>
+<status status="PASS" starttime="20210915 11:30:26.849" endtime="20210915 11:30:27.389"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210910 16:20:10.833" endtime="20210910 16:20:11.832"/>
+<status status="PASS" starttime="20210915 11:30:27.389" endtime="20210915 11:30:28.163"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:10.001" endtime="20210910 16:20:11.833"/>
+<status status="PASS" starttime="20210915 11:30:26.848" endtime="20210915 11:30:28.164"/>
 </kw>
 <kw name="Quando acesso a tela button" library="KwsValidacaoComponentesButton">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[5]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:11.834" endtime="20210910 16:20:11.886"/>
+<status status="PASS" starttime="20210915 11:30:28.165" endtime="20210915 11:30:28.210"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[5]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:11.887" level="INFO">Clicking element '(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[5]'.</msg>
-<status status="PASS" starttime="20210910 16:20:11.886" endtime="20210910 16:20:11.984"/>
+<msg timestamp="20210915 11:30:28.211" level="INFO">Clicking element '(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[5]'.</msg>
+<status status="PASS" starttime="20210915 11:30:28.211" endtime="20210915 11:30:28.274"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:11.834" endtime="20210910 16:20:11.985"/>
+<status status="PASS" starttime="20210915 11:30:28.164" endtime="20210915 11:30:28.274"/>
 </kw>
 <kw name="Então interajo com os popup na tela" library="KwsValidacaoComponentesButton">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//span[@class='po-button-label ng-star-inserted'][contains(.,'PO Button')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:11.988" endtime="20210910 16:20:12.336"/>
+<status status="PASS" starttime="20210915 11:30:28.275" endtime="20210915 11:30:28.820"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[@class='po-button-label ng-star-inserted'][contains(.,'PO Button')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:12.337" level="INFO">Clicking element '//span[@class='po-button-label ng-star-inserted'][contains(.,'PO Button')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:12.337" endtime="20210910 16:20:12.404"/>
+<msg timestamp="20210915 11:30:28.820" level="INFO">Clicking element '//span[@class='po-button-label ng-star-inserted'][contains(.,'PO Button')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:28.820" endtime="20210915 11:30:28.876"/>
 </kw>
 <kw name="Alert Should Be Present" library="SeleniumLibrary">
 <arg>Po Button!</arg>
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20210910 16:20:12.405" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20210910 16:20:12.404" endtime="20210910 16:20:12.420"/>
+<msg timestamp="20210915 11:30:28.877" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210915 11:30:28.877" endtime="20210915 11:30:28.887"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//button[contains(@type,'button')])[4]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:12.420" endtime="20210910 16:20:12.471"/>
+<status status="PASS" starttime="20210915 11:30:28.888" endtime="20210915 11:30:28.923"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>(//button[contains(@type,'button')])[4]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:12.472" level="INFO">Clicking button '(//button[contains(@type,'button')])[4]'.</msg>
-<status status="PASS" starttime="20210910 16:20:12.471" endtime="20210910 16:20:12.593"/>
+<msg timestamp="20210915 11:30:28.924" level="INFO">Clicking button '(//button[contains(@type,'button')])[4]'.</msg>
+<status status="PASS" starttime="20210915 11:30:28.924" endtime="20210915 11:30:29.021"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>POButtonlabs.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210910 16:20:12.810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="POButtonlabs.png"&gt;&lt;img src="POButtonlabs.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210910 16:20:12.594" endtime="20210910 16:20:12.810"/>
+<msg timestamp="20210915 11:30:29.210" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="POButtonlabs.png"&gt;&lt;img src="POButtonlabs.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210915 11:30:29.021" endtime="20210915 11:30:29.210"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//span[@class='po-button-label ng-star-inserted'][contains(.,'Ok')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:12.810" endtime="20210910 16:20:12.870"/>
+<status status="PASS" starttime="20210915 11:30:29.210" endtime="20210915 11:30:29.255"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[@class='po-button-label ng-star-inserted'][contains(.,'Ok')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:12.871" level="INFO">Clicking element '//span[@class='po-button-label ng-star-inserted'][contains(.,'Ok')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:12.870" endtime="20210910 16:20:12.928"/>
+<msg timestamp="20210915 11:30:29.256" level="INFO">Clicking element '//span[@class='po-button-label ng-star-inserted'][contains(.,'Ok')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:29.255" endtime="20210915 11:30:29.310"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Disabled')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:12.928" endtime="20210910 16:20:12.961"/>
+<status status="PASS" starttime="20210915 11:30:29.310" endtime="20210915 11:30:29.337"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Disabled')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:12.962" level="INFO">Clicking element '//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Disabled')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:12.961" endtime="20210910 16:20:13.010"/>
+<msg timestamp="20210915 11:30:29.338" level="INFO">Clicking element '//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Disabled')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:29.337" endtime="20210915 11:30:29.393"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Loading')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:13.010" level="INFO">Clicking element '//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Loading')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:13.010" endtime="20210910 16:20:13.071"/>
+<msg timestamp="20210915 11:30:29.394" level="INFO">Clicking element '//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Loading')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:29.393" endtime="20210915 11:30:29.447"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>Properties.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210910 16:20:13.217" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Properties.png"&gt;&lt;img src="Properties.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210910 16:20:13.071" endtime="20210910 16:20:13.217"/>
+<msg timestamp="20210915 11:30:29.647" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Properties.png"&gt;&lt;img src="Properties.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210915 11:30:29.447" endtime="20210915 11:30:29.647"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//label[@class='po-radio-group-label po-clickable'][contains(.,'fa fa-podcast')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:13.217" level="INFO">Clicking element '//label[@class='po-radio-group-label po-clickable'][contains(.,'fa fa-podcast')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:13.217" endtime="20210910 16:20:13.277"/>
+<msg timestamp="20210915 11:30:29.648" level="INFO">Clicking element '//label[@class='po-radio-group-label po-clickable'][contains(.,'fa fa-podcast')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:29.648" endtime="20210915 11:30:29.708"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>icons.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210910 16:20:13.558" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="icons.png"&gt;&lt;img src="icons.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210910 16:20:13.278" endtime="20210910 16:20:13.558"/>
+<msg timestamp="20210915 11:30:29.896" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="icons.png"&gt;&lt;img src="icons.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210915 11:30:29.709" endtime="20210915 11:30:29.896"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//label[@class='po-radio-group-label po-clickable'][contains(.,'danger')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:13.558" endtime="20210910 16:20:13.592"/>
+<status status="PASS" starttime="20210915 11:30:29.897" endtime="20210915 11:30:29.925"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//label[@class='po-radio-group-label po-clickable'][contains(.,'danger')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:13.592" level="INFO">Clicking element '//label[@class='po-radio-group-label po-clickable'][contains(.,'danger')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:13.592" endtime="20210910 16:20:13.654"/>
+<msg timestamp="20210915 11:30:29.926" level="INFO">Clicking element '//label[@class='po-radio-group-label po-clickable'][contains(.,'danger')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:29.925" endtime="20210915 11:30:29.984"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>type.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210910 16:20:13.828" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="type.png"&gt;&lt;img src="type.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210910 16:20:13.654" endtime="20210910 16:20:13.828"/>
+<msg timestamp="20210915 11:30:30.147" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="type.png"&gt;&lt;img src="type.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210915 11:30:29.984" endtime="20210915 11:30:30.148"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[@type='button'][contains(.,'Confirm')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:13.831" endtime="20210910 16:20:13.863"/>
+<status status="PASS" starttime="20210915 11:30:30.150" endtime="20210915 11:30:30.178"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@type='button'][contains(.,'Confirm')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:13.864" level="INFO">Clicking element '//button[@type='button'][contains(.,'Confirm')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:13.863" endtime="20210910 16:20:13.966"/>
+<msg timestamp="20210915 11:30:30.179" level="INFO">Clicking element '//button[@type='button'][contains(.,'Confirm')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:30.179" endtime="20210915 11:30:30.246"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[contains(@class,'po-icon po-icon-ok')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:13.966" level="INFO">Clicking element '//span[contains(@class,'po-icon po-icon-ok')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:13.966" endtime="20210910 16:20:14.032"/>
+<msg timestamp="20210915 11:30:30.247" level="INFO">Clicking element '//span[contains(@class,'po-icon po-icon-ok')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:30.246" endtime="20210915 11:30:30.300"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[@type='button'][contains(.,'Ignore')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:14.032" endtime="20210910 16:20:14.060"/>
+<status status="PASS" starttime="20210915 11:30:30.300" endtime="20210915 11:30:30.327"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@type='button'][contains(.,'Ignore')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:14.061" level="INFO">Clicking element '//button[@type='button'][contains(.,'Ignore')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:14.061" endtime="20210910 16:20:14.124"/>
+<msg timestamp="20210915 11:30:30.328" level="INFO">Clicking element '//button[@type='button'][contains(.,'Ignore')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:30.328" endtime="20210915 11:30:30.388"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[contains(@class,'po-icon po-icon-warning')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:14.125" level="INFO">Clicking element '//span[contains(@class,'po-icon po-icon-warning')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:14.124" endtime="20210910 16:20:14.205"/>
+<msg timestamp="20210915 11:30:30.389" level="INFO">Clicking element '//span[contains(@class,'po-icon po-icon-warning')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:30.388" endtime="20210915 11:30:30.440"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>POButtonSocialNetworeIgnore.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210910 16:20:14.361" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="POButtonSocialNetworeIgnore.png"&gt;&lt;img src="POButtonSocialNetworeIgnore.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210910 16:20:14.205" endtime="20210910 16:20:14.361"/>
+<msg timestamp="20210915 11:30:30.796" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="POButtonSocialNetworeIgnore.png"&gt;&lt;img src="POButtonSocialNetworeIgnore.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210915 11:30:30.440" endtime="20210915 11:30:30.796"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//i[contains(@class,'fa fa-ban po-fonts-icon')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:14.361" endtime="20210910 16:20:14.389"/>
+<status status="PASS" starttime="20210915 11:30:30.796" endtime="20210915 11:30:30.826"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//i[contains(@class,'fa fa-ban po-fonts-icon')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:14.390" level="INFO">Clicking element '//i[contains(@class,'fa fa-ban po-fonts-icon')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:14.390" endtime="20210910 16:20:14.450"/>
+<msg timestamp="20210915 11:30:30.826" level="INFO">Clicking element '//i[contains(@class,'fa fa-ban po-fonts-icon')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:30.826" endtime="20210915 11:30:30.884"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[contains(@class,'po-icon po-icon-info')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:14.451" level="INFO">Clicking element '//span[contains(@class,'po-icon po-icon-info')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:14.450" endtime="20210910 16:20:14.504"/>
+<msg timestamp="20210915 11:30:30.885" level="INFO">Clicking element '//span[contains(@class,'po-icon po-icon-info')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:30.884" endtime="20210915 11:30:30.939"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>POButtonSocialNetworeBlock.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210910 16:20:14.648" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="POButtonSocialNetworeBlock.png"&gt;&lt;img src="POButtonSocialNetworeBlock.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210910 16:20:14.504" endtime="20210910 16:20:14.649"/>
+<msg timestamp="20210915 11:30:31.076" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="POButtonSocialNetworeBlock.png"&gt;&lt;img src="POButtonSocialNetworeBlock.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210915 11:30:30.940" endtime="20210915 11:30:31.076"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:11.987" endtime="20210910 16:20:14.649"/>
+<status status="PASS" starttime="20210915 11:30:28.275" endtime="20210915 11:30:31.076"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:10.000" endtime="20210910 16:20:14.650"/>
+<status status="PASS" starttime="20210915 11:30:26.847" endtime="20210915 11:30:31.077"/>
 </test>
 <test id="s1-t3" name="Validação Componentes Combo">
 <kw name="Dado que esteja na tela de componente do POUI combo" library="KwsValidacaoComponentesCombo">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210910 16:20:14.653" level="INFO">Opening url 'https://po-ui.io/documentation'</msg>
-<status status="PASS" starttime="20210910 16:20:14.653" endtime="20210910 16:20:15.829"/>
+<msg timestamp="20210915 11:30:31.081" level="INFO">Opening url 'https://po-ui.io/documentation'</msg>
+<status status="PASS" starttime="20210915 11:30:31.081" endtime="20210915 11:30:31.507"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210910 16:20:15.830" endtime="20210910 16:20:15.838"/>
+<status status="PASS" starttime="20210915 11:30:31.507" endtime="20210915 11:30:32.239"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:14.653" endtime="20210910 16:20:15.838"/>
+<status status="PASS" starttime="20210915 11:30:31.080" endtime="20210915 11:30:32.239"/>
 </kw>
 <kw name="Quando selecionar o subitem Combo" library="KwsValidacaoComponentesCombo">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[13]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:15.840" endtime="20210910 16:20:15.882"/>
+<status status="PASS" starttime="20210915 11:30:32.241" endtime="20210915 11:30:32.280"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[13]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:15.882" level="INFO">Clicking element '(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[13]'.</msg>
-<status status="PASS" starttime="20210910 16:20:15.882" endtime="20210910 16:20:15.967"/>
+<msg timestamp="20210915 11:30:32.280" level="INFO">Clicking element '(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[13]'.</msg>
+<status status="PASS" starttime="20210915 11:30:32.280" endtime="20210915 11:30:32.351"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:15.839" endtime="20210910 16:20:15.967"/>
+<status status="PASS" starttime="20210915 11:30:32.240" endtime="20210915 11:30:32.352"/>
 </kw>
 <kw name="Então os dados estarão disponiveis para preenchimento" library="KwsValidacaoComponentesCombo">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//input[contains(@autocomplete,'off')])[1]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:15.969" endtime="20210910 16:20:16.887"/>
+<status status="PASS" starttime="20210915 11:30:32.355" endtime="20210915 11:30:33.151"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//input[contains(@autocomplete,'off')])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:16.888" level="INFO">Clicking element '(//input[contains(@autocomplete,'off')])[1]'.</msg>
-<status status="PASS" starttime="20210910 16:20:16.887" endtime="20210910 16:20:16.990"/>
+<msg timestamp="20210915 11:30:33.153" level="INFO">Clicking element '(//input[contains(@autocomplete,'off')])[1]'.</msg>
+<status status="PASS" starttime="20210915 11:30:33.152" endtime="20210915 11:30:33.230"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//span[contains(.,'Option 2')])[3]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:16.990" endtime="20210910 16:20:17.024"/>
+<status status="PASS" starttime="20210915 11:30:33.230" endtime="20210915 11:30:33.263"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(.,'Option 2')])[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:17.025" level="INFO">Clicking element '(//span[contains(.,'Option 2')])[3]'.</msg>
-<status status="PASS" starttime="20210910 16:20:17.024" endtime="20210910 16:20:17.087"/>
+<msg timestamp="20210915 11:30:33.264" level="INFO">Clicking element '(//span[contains(.,'Option 2')])[3]'.</msg>
+<status status="PASS" starttime="20210915 11:30:33.264" endtime="20210915 11:30:33.326"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//div[contains(@class,'po-switch-container po-clickable po-switch-container-off')])[1]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:17.087" endtime="20210910 16:20:17.123"/>
+<status status="PASS" starttime="20210915 11:30:33.327" endtime="20210915 11:30:33.383"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//div[contains(@class,'po-switch-container po-clickable po-switch-container-off')])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:17.124" level="INFO">Clicking element '(//div[contains(@class,'po-switch-container po-clickable po-switch-container-off')])[1]'.</msg>
-<status status="PASS" starttime="20210910 16:20:17.123" endtime="20210910 16:20:17.208"/>
+<msg timestamp="20210915 11:30:33.385" level="INFO">Clicking element '(//div[contains(@class,'po-switch-container po-clickable po-switch-container-off')])[1]'.</msg>
+<status status="PASS" starttime="20210915 11:30:33.384" endtime="20210915 11:30:33.452"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@name,'optionsGroup')]</arg>
 <arg>Automation Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:17.209" level="INFO">Typing text 'Automation Test' into text field '//input[contains(@name,'optionsGroup')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:17.208" endtime="20210910 16:20:17.524"/>
+<msg timestamp="20210915 11:30:33.453" level="INFO">Typing text 'Automation Test' into text field '//input[contains(@name,'optionsGroup')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:33.453" endtime="20210915 11:30:33.854"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@name,'optionLabel')]</arg>
 <arg>Cadastro de um label para teste de regressao</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:17.525" level="INFO">Typing text 'Cadastro de um label para teste de regressao' into text field '//input[contains(@name,'optionLabel')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:17.524" endtime="20210910 16:20:18.079"/>
+<msg timestamp="20210915 11:30:33.855" level="INFO">Typing text 'Cadastro de um label para teste de regressao' into text field '//input[contains(@name,'optionLabel')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:33.854" endtime="20210915 11:30:34.375"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@name,'optionValue')]</arg>
 <arg>999</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:18.079" level="INFO">Typing text '999' into text field '//input[contains(@name,'optionValue')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:18.079" endtime="20210910 16:20:18.227"/>
+<msg timestamp="20210915 11:30:34.376" level="INFO">Typing text '999' into text field '//input[contains(@name,'optionValue')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:34.375" endtime="20210915 11:30:34.505"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[@type='button'][contains(.,'Add Option')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:18.227" endtime="20210910 16:20:18.274"/>
+<status status="PASS" starttime="20210915 11:30:34.505" endtime="20210915 11:30:34.537"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@type='button'][contains(.,'Add Option')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:18.275" level="INFO">Clicking element '//button[@type='button'][contains(.,'Add Option')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:18.274" endtime="20210910 16:20:18.352"/>
+<msg timestamp="20210915 11:30:34.538" level="INFO">Clicking element '//button[@type='button'][contains(.,'Add Option')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:34.537" endtime="20210915 11:30:34.597"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Optional')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:18.352" level="INFO">Clicking element '//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Optional')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:18.352" endtime="20210910 16:20:18.409"/>
+<msg timestamp="20210915 11:30:34.598" level="INFO">Clicking element '//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Optional')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:34.597" endtime="20210915 11:30:34.663"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Required')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:18.410" level="INFO">Clicking element '//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Required')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:18.410" endtime="20210910 16:20:18.468"/>
+<msg timestamp="20210915 11:30:34.663" level="INFO">Clicking element '//label[@class='po-checkbox-group-label po-clickable'][contains(.,'Required')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:34.663" endtime="20210915 11:30:34.722"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//label[@class='po-radio-group-label po-clickable'][contains(.,'Ends With')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:18.469" level="INFO">Clicking element '//label[@class='po-radio-group-label po-clickable'][contains(.,'Ends With')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:18.468" endtime="20210910 16:20:18.532"/>
+<msg timestamp="20210915 11:30:34.723" level="INFO">Clicking element '//label[@class='po-radio-group-label po-clickable'][contains(.,'Ends With')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:34.722" endtime="20210915 11:30:34.773"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@name,'filterService')]</arg>
 <arg>https://po-sample-api.herokuapp.com/v1/heroes</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:18.533" level="INFO">Typing text 'https://po-sample-api.herokuapp.com/v1/heroes' into text field '//input[contains(@name,'filterService')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:18.532" endtime="20210910 16:20:19.093"/>
+<msg timestamp="20210915 11:30:34.774" level="INFO">Typing text 'https://po-sample-api.herokuapp.com/v1/heroes' into text field '//input[contains(@name,'filterService')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:34.774" endtime="20210915 11:30:35.278"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//input[contains(@name,'name')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:19.093" endtime="20210910 16:20:19.123"/>
+<status status="PASS" starttime="20210915 11:30:35.278" endtime="20210915 11:30:35.306"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@name,'name')]</arg>
 <arg>Renato Kawakubo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:19.124" level="INFO">Typing text 'Renato Kawakubo' into text field '//input[contains(@name,'name')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:19.124" endtime="20210910 16:20:19.417"/>
+<msg timestamp="20210915 11:30:35.306" level="INFO">Typing text 'Renato Kawakubo' into text field '//input[contains(@name,'name')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:35.306" endtime="20210915 11:30:35.527"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@class,'po-input po-input-icon-left po-input-icon-right')]</arg>
 <arg>renato123456@totvs.com.br</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:19.417" level="INFO">Typing text 'renato123456@totvs.com.br' into text field '//input[contains(@class,'po-input po-input-icon-left po-input-icon-right')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:19.417" endtime="20210910 16:20:19.742"/>
+<msg timestamp="20210915 11:30:35.528" level="INFO">Typing text 'renato123456@totvs.com.br' into text field '//input[contains(@class,'po-input po-input-icon-left po-input-icon-right')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:35.527" endtime="20210915 11:30:35.855"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//span[contains(@class,'po-icon po-field-icon po-icon-calendar')])[1]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:19.742" endtime="20210910 16:20:19.774"/>
+<status status="PASS" starttime="20210915 11:30:35.855" endtime="20210915 11:30:35.886"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(@class,'po-icon po-field-icon po-icon-calendar')])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:19.775" level="INFO">Clicking element '(//span[contains(@class,'po-icon po-field-icon po-icon-calendar')])[1]'.</msg>
-<status status="PASS" starttime="20210910 16:20:19.775" endtime="20210910 16:20:19.840"/>
+<msg timestamp="20210915 11:30:35.887" level="INFO">Clicking element '(//span[contains(@class,'po-icon po-field-icon po-icon-calendar')])[1]'.</msg>
+<status status="PASS" starttime="20210915 11:30:35.887" endtime="20210915 11:30:35.957"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(.,'13')])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:19.841" level="INFO">Clicking element '(//span[contains(.,'13')])[1]'.</msg>
-<status status="PASS" starttime="20210910 16:20:19.840" endtime="20210910 16:20:19.928"/>
+<msg timestamp="20210915 11:30:35.958" level="INFO">Clicking element '(//span[contains(.,'13')])[1]'.</msg>
+<status status="PASS" starttime="20210915 11:30:35.958" endtime="20210915 11:30:36.059"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[contains(@placeholder,'(99) 99999-9999')]</arg>
 <arg>11123456789</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:19.930" level="INFO">Typing text '11123456789' into text field '//input[contains(@placeholder,'(99) 99999-9999')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:19.929" endtime="20210910 16:20:20.128"/>
+<msg timestamp="20210915 11:30:36.060" level="INFO">Typing text '11123456789' into text field '//input[contains(@placeholder,'(99) 99999-9999')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:36.060" endtime="20210915 11:30:36.240"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//input[contains(@placeholder,'Select a location')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:20.128" endtime="20210910 16:20:20.159"/>
+<status status="PASS" starttime="20210915 11:30:36.241" endtime="20210915 11:30:36.268"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[contains(@placeholder,'Select a location')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:20.159" level="INFO">Clicking element '//input[contains(@placeholder,'Select a location')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:20.159" endtime="20210910 16:20:20.233"/>
+<msg timestamp="20210915 11:30:36.269" level="INFO">Clicking element '//input[contains(@placeholder,'Select a location')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:36.268" endtime="20210915 11:30:36.334"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[@class='po-sm-10 po-md-9 po-lg-11'][contains(.,'São Paulo')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:20.234" level="INFO">Clicking element '//div[@class='po-sm-10 po-md-9 po-lg-11'][contains(.,'São Paulo')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:20.233" endtime="20210910 16:20:20.307"/>
+<msg timestamp="20210915 11:30:36.335" level="INFO">Clicking element '//div[@class='po-sm-10 po-md-9 po-lg-11'][contains(.,'São Paulo')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:36.334" endtime="20210915 11:30:36.407"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//div[contains(@class,'po-select-button')])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:20.308" level="INFO">Clicking element '(//div[contains(@class,'po-select-button')])[2]'.</msg>
-<status status="PASS" starttime="20210910 16:20:20.307" endtime="20210910 16:20:20.386"/>
+<msg timestamp="20210915 11:30:36.407" level="INFO">Clicking element '(//div[contains(@class,'po-select-button')])[2]'.</msg>
+<status status="PASS" starttime="20210915 11:30:36.407" endtime="20210915 11:30:36.465"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[@class='po-select-item'][contains(.,'Particular')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:20.387" level="INFO">Clicking element '//div[@class='po-select-item'][contains(.,'Particular')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:20.386" endtime="20210910 16:20:20.460"/>
+<msg timestamp="20210915 11:30:36.466" level="INFO">Clicking element '//div[@class='po-select-item'][contains(.,'Particular')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:36.466" endtime="20210915 11:30:36.525"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[contains(@name,'medicalSpecialty')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:20.461" level="INFO">Clicking element '//input[contains(@name,'medicalSpecialty')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:20.461" endtime="20210910 16:20:20.539"/>
+<msg timestamp="20210915 11:30:36.525" level="INFO">Clicking element '//input[contains(@name,'medicalSpecialty')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:36.525" endtime="20210915 11:30:36.599"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(.,'Pediatrist')])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:20.541" level="INFO">Clicking element '(//span[contains(.,'Pediatrist')])[2]'.</msg>
-<status status="PASS" starttime="20210910 16:20:20.540" endtime="20210910 16:20:20.623"/>
+<msg timestamp="20210915 11:30:36.600" level="INFO">Clicking element '(//span[contains(.,'Pediatrist')])[2]'.</msg>
+<status status="PASS" starttime="20210915 11:30:36.599" endtime="20210915 11:30:36.674"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//input[contains(@autocomplete,'off')])[6]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:20.623" endtime="20210910 16:20:20.653"/>
+<status status="PASS" starttime="20210915 11:30:36.675" endtime="20210915 11:30:36.703"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//input[contains(@autocomplete,'off')])[6]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:20.653" level="INFO">Clicking element '(//input[contains(@autocomplete,'off')])[6]'.</msg>
-<status status="PASS" starttime="20210910 16:20:20.653" endtime="20210910 16:20:20.738"/>
+<msg timestamp="20210915 11:30:36.704" level="INFO">Clicking element '(//input[contains(@autocomplete,'off')])[6]'.</msg>
+<status status="PASS" starttime="20210915 11:30:36.704" endtime="20210915 11:30:36.775"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//span[contains(.,'Viuva Negra')]</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:20.738" endtime="20210910 16:20:21.652"/>
+<status status="PASS" starttime="20210915 11:30:36.776" endtime="20210915 11:30:37.479"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[contains(.,'Viuva Negra')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:21.652" level="INFO">Clicking element '//span[contains(.,'Viuva Negra')]'.</msg>
-<status status="PASS" starttime="20210910 16:20:21.652" endtime="20210910 16:20:21.743"/>
+<msg timestamp="20210915 11:30:37.479" level="INFO">Clicking element '//span[contains(.,'Viuva Negra')]'.</msg>
+<status status="PASS" starttime="20210915 11:30:37.479" endtime="20210915 11:30:37.552"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:15.968" endtime="20210910 16:20:21.744"/>
+<status status="PASS" starttime="20210915 11:30:32.354" endtime="20210915 11:30:37.553"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:14.652" endtime="20210910 16:20:21.748"/>
-</test>
-<test id="s1-t4" name="Geracao de erro no robotframework">
-<kw name="Dado que esteja na tela de componente do POUI combo" library="KwsValidacaoComponentesCombo">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${url}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210910 16:20:21.764" level="INFO">Opening url 'https://po-ui.io/documentation'</msg>
-<status status="PASS" starttime="20210910 16:20:21.763" endtime="20210910 16:20:22.992"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210910 16:20:22.992" endtime="20210910 16:20:23.000"/>
-</kw>
-<status status="PASS" starttime="20210910 16:20:21.762" endtime="20210910 16:20:23.000"/>
-</kw>
-<kw name="Quando selecionar o subitem" library="KwsgeracaoDeErro">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[13]</arg>
-<arg>5</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:23.001" endtime="20210910 16:20:23.030"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[13]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:23.030" level="INFO">Clicking element '(//span[@class='po-button-label ng-star-inserted'][contains(.,'Exemplos')])[13]'.</msg>
-<status status="PASS" starttime="20210910 16:20:23.030" endtime="20210910 16:20:23.106"/>
-</kw>
-<status status="PASS" starttime="20210910 16:20:23.001" endtime="20210910 16:20:23.106"/>
-</kw>
-<kw name="Então os dados estarão disponiveis" library="KwsgeracaoDeErro">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>(//input[contains(@autocomplete,'off')])[1]</arg>
-<arg>5</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210910 16:20:23.108" endtime="20210910 16:20:23.837"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>(//input[contains(@autocomplete,'off')])[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:23.837" level="INFO">Clicking element '(//input[contains(@autocomplete,'off')])[1]'.</msg>
-<status status="PASS" starttime="20210910 16:20:23.837" endtime="20210910 16:20:23.907"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>(span[contains(.,'Option 2')])[3]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210910 16:20:23.908" level="INFO">Clicking element '(span[contains(.,'Option 2')])[3]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210910 16:20:24.089" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210910 16:20:23.924" endtime="20210910 16:20:24.089"/>
-</kw>
-<msg timestamp="20210910 16:20:24.149" level="FAIL">Element with locator '(span[contains(.,'Option 2')])[3]' not found.</msg>
-<status status="FAIL" starttime="20210910 16:20:23.907" endtime="20210910 16:20:24.149"/>
-</kw>
-<status status="FAIL" starttime="20210910 16:20:23.108" endtime="20210910 16:20:24.150"/>
-</kw>
-<status status="FAIL" starttime="20210910 16:20:21.760" endtime="20210910 16:20:24.151">Element with locator '(span[contains(.,'Option 2')])[3]' not found.</status>
+<status status="PASS" starttime="20210915 11:30:31.079" endtime="20210915 11:30:37.553"/>
 </test>
 <kw name="Close Session" library="kwsOpenSession" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210910 16:20:24.156" endtime="20210910 16:20:26.853"/>
+<status status="PASS" starttime="20210915 11:30:37.558" endtime="20210915 11:30:40.712"/>
 </kw>
-<status status="PASS" starttime="20210910 16:20:24.155" endtime="20210910 16:20:26.853"/>
+<status status="PASS" starttime="20210915 11:30:37.557" endtime="20210915 11:30:40.713"/>
 </kw>
-<status status="FAIL" starttime="20210910 16:19:58.575" endtime="20210910 16:20:26.853"/>
+<status status="PASS" starttime="20210915 11:30:18.469" endtime="20210915 11:30:40.713"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="1" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="1" skip="0" id="s1" name="ChamadasSutiesTestesPoUi">ChamadasSutiesTestesPoUi</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="ChamadasSutiesTestesPoUi">ChamadasSutiesTestesPoUi</stat>
 </suite>
 </statistics>
 <errors>
